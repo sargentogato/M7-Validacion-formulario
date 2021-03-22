@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="preconnect" href="https://fonts.gstatic.com">
+	<!-- Bootstrap CSS -->
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+		integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+	<link rel="stylesheet" href="./css/style.css">
+	<title>Survey Form</title>
+</head>
+
+<body id="body">
+	<main class="formBox">
+		<header class="head">
+			<h1 id="title" class="head__title">
+				IT Academy
+			</h1>
+		</header>
+
+		<form id="survey-form" action="" name="Survey-Form" class="survey-form">
+			<div class="form-group">
+				<label for="search" id="Searchlabel" class="survey-form__label">Buscar</label>
+				<input type="search" id="search" placeholder="Buscar" class="survey-form__input form-control">
+				<p class="error" id="searchError"></p>
+			</div>
+
+			<div class="form-group">
+				<label for="name" id="name-label" class="survey-form__label">Nombre</label>
+				<input type="text" id="name" placeholder="Nombre" class="survey-form__input">
+				<p class="error" id="nameError"></p>
+			</div>
+
+			<div class="form-group">
+				<label for="email" id="email-label" class="survey-form__label">Correo</label>
+				<input type="email" name="email" id="email" placeholder="Correo" class="survey-form__input">
+				<p class="error" id="emailError"></p>
+			</div>
+
+			<div class="form-group">
+				<label for="password" id="password" class="survey-form__label">Password</label>
+				<input type="password" name="password" id="password" placeholder="Password" class="survey-form__input">
+				<p class="error" id="passwordError"></p>
+			</div>
+
+			<div class="form-group">
+				<label for="passwordValidation" id="passwordValidation" class="survey-form__label">Repita su password</label>
+				<input type="password" name="passwordValidation" id="passwordValidation" placeholder="Repita su password"
+					class="survey-form__input">
+				<p class="error" id="passwordValidationError"></p>
+			</div>
+
+			<div class="form-group">
+				<label for="province" id="province" class="survey-form__label">Provincia</label>
+				<select id="province" class="survey-form__input">
+					<option value=""></option>
+					<option value="Barcelona">Barcelona</option>
+					<option value="Girona">Girona</option>
+					<option value="Tarragona">Tarragona</option>
+					<option value="Lleida">Lleida</option>
+				</select>
+				<p class="error" id="provinceError"></p>
+			</div>
+
+
+
+			<div class="form-group"></div>
+			<button id="submit" type="submit" class="submit-button">Submit</button>
+		</form>
+
+		<a id="modal" class="openModal" href="#openModal">
+		</a>
+
+		<div id="openModal" class="modalBackground">
+			<div class="modalBox">
+				<div class="modalTitleClose">
+					<h2 class="modalTitle">Registro Realizado</h2>
+					<a href="#close" title="close" class="close">X</a>
+				</div>
+
+				<div id="modalBox" class="modalBoxText">
+				</div>
+
+				<div class="modalBoxButtons">
+					<a href="#" class="linkButton"><button class="btn" type="button">Close</button></a>
+				</div>
+			</div>
+		</div>
+	</main>
+
+	<script src="./script/script.js"></script>
+</body>
+
+</html>
